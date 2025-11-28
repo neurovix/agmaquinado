@@ -1,0 +1,227 @@
+---
+import { Image } from "astro:assets";
+import AG from "/public/images/ag_maquinado.png";
+import Phone from "/public/icons/phone.png";
+---
+
+<nav class="w-full bg-white/95 backdrop-blur-md shadow-lg fixed top-0 left-0 right-0 z-50 border-b border-gray-200">
+  <div class="max-w-7xl mx-auto px-5 md:px-10 py-3 font-eras-demi">
+    <div class="flex flex-row items-center justify-between">
+      <div class="w-32 md:w-40 transition-transform duration-300 hover:scale-105">
+        <a href="/">
+          <Image class="w-full" src={AG} alt="ag_maquinado_logo" />
+        </a>
+      </div>
+
+      <div class="hidden lg:flex flex-1 justify-center">
+        <ul class="flex flex-row items-center text-sm font-bold">
+          <li class="mx-3 xl:mx-4">
+            <a 
+              href="/" 
+              class="relative py-2 text-gray-700 hover:text-[#245080] transition-colors duration-300 group"
+            >
+              INICIO
+              <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-[#245080] transition-all duration-300 group-hover:w-full"></span>
+            </a>
+          </li>
+          <li class="mx-3 xl:mx-4">
+            <a 
+              href="/servicios"
+              class="relative py-2 text-gray-700 hover:text-[#245080] transition-colors duration-300 group"
+            >
+              SERVICIOS
+              <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-[#245080] transition-all duration-300 group-hover:w-full"></span>
+            </a>
+          </li>
+          <li class="mx-3 xl:mx-4">
+            <a 
+              href="/proyectos" 
+              class="relative py-2 text-gray-700 hover:text-[#245080] transition-colors duration-300 group"
+            >
+              PROYECTOS
+              <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-[#245080] transition-all duration-300 group-hover:w-full"></span>
+            </a>
+          </li>
+          <li class="mx-3 xl:mx-4">
+            <a 
+              href="/clientes" 
+              class="relative py-2 text-gray-700 hover:text-[#245080] transition-colors duration-300 group"
+            >
+              CLIENTES
+              <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-[#245080] transition-all duration-300 group-hover:w-full"></span>
+            </a>
+          </li>
+          <li class="mx-3 xl:mx-4">
+            <a 
+              href="/nosotros" 
+              class="relative py-2 text-gray-700 hover:text-[#245080] transition-colors duration-300 group"
+            >
+              NOSOTROS
+              <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-[#245080] transition-all duration-300 group-hover:w-full"></span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="hidden lg:flex items-center gap-3">
+        <a 
+          href="tel:+528444303784" 
+          class="flex items-center gap-2 bg-linear-to-r from-gray-100 to-gray-200 hover:from-gray-200 hover:to-gray-300 px-4 py-2.5 rounded-lg transition-all duration-300 shadow-sm hover:shadow-md group"
+        >
+          <Image 
+            src={Phone} 
+            alt="phone_icon" 
+            class="w-5 xl:w-6 transition-transform duration-300 group-hover:scale-110" 
+          />
+          <span class="text-xs xl:text-sm font-semibold text-gray-700 whitespace-nowrap">
+            (844) 430-3784
+          </span>
+        </a>
+        <a 
+          href="/contacto" 
+          class="bg-linear-to-r from-[#132a42] to-[#245080] hover:from-[#245080] hover:to-[#132a42] text-white font-bold text-xs xl:text-sm px-5 xl:px-6 py-2.5 rounded-lg transition-all duration-300 shadow-md hover:shadow-xl hover:scale-105"
+        >
+          CONTACTO
+        </a>
+      </div>
+
+      <button 
+        id="menu-toggle" 
+        class="lg:hidden flex flex-col justify-center items-center w-10 h-10 space-y-1.5 relative z-50 group"
+        aria-label="Toggle menu"
+      >
+        <span class="block w-6 h-0.5 bg-gray-800 group-hover:bg-[#245080] transition-all duration-300 rounded-full"></span>
+        <span class="block w-6 h-0.5 bg-gray-800 group-hover:bg-[#245080] transition-all duration-300 rounded-full"></span>
+        <span class="block w-6 h-0.5 bg-gray-800 group-hover:bg-[#245080] transition-all duration-300 rounded-full"></span>
+      </button>
+    </div>
+
+    <div 
+      id="mobile-menu" 
+      class="lg:hidden hidden flex-col mt-6 pb-4 border-t border-gray-200 pt-4 animate-fadeIn"
+    >
+      <ul class="flex flex-col space-y-1">
+        <li>
+          <a 
+            href="/" 
+            class="block py-3 px-4 text-gray-700 hover:text-[#245080] hover:bg-blue-50 rounded-lg transition-all duration-300 font-semibold"
+          >
+            INICIO
+          </a>
+        </li>
+        <li>
+          <a 
+            href="/servicios"
+            class="block py-3 px-4 text-gray-700 hover:text-[#245080] hover:bg-blue-50 rounded-lg transition-all duration-300 font-semibold"
+          >
+            SERVICIOS
+          </a>
+        </li>
+        <li>
+          <a 
+            href="/proyectos"
+            class="block py-3 px-4 text-gray-700 hover:text-[#245080] hover:bg-blue-50 rounded-lg transition-all duration-300 font-semibold"
+          >
+            PROYECTOS
+          </a>
+        </li>
+        <li>
+          <a 
+            href="/clientes"
+            class="block py-3 px-4 text-gray-700 hover:text-[#245080] hover:bg-blue-50 rounded-lg transition-all duration-300 font-semibold"
+          >
+            CLIENTES
+          </a>
+        </li>
+        <li>
+          <a 
+            href="/nosotros"
+            class="block py-3 px-4 text-gray-700 hover:text-[#245080] hover:bg-blue-50 rounded-lg transition-all duration-300 font-semibold"
+          >
+            NOSOTROS
+          </a>
+        </li>
+      </ul>
+      
+      <div class="flex flex-col gap-3 pt-4 mt-4 border-t border-gray-200">
+        <a 
+          href="tel:+528444303784" 
+          class="flex items-center justify-center gap-3 bg-linear-to-r from-gray-100 to-gray-200 hover:from-gray-200 hover:to-gray-300 p-3.5 rounded-lg transition-all duration-300 shadow-sm hover:shadow-md"
+        >
+          <Image src={Phone} alt="phone_icon" class="w-6" />
+          <span class="text-sm font-semibold text-gray-700">(844) 430-3784</span>
+        </a>
+        <a 
+          href="/contacto" 
+          class="bg-linear-to-r from-[#132a42] to-[#245080] text-white font-bold text-sm text-center px-6 py-3.5 rounded-lg transition-all duration-300 shadow-md hover:shadow-xl hover:scale-105"
+        >
+          CONTACTO
+        </a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<div class="h-16 md:h-20"></div>
+
+<script>
+  const menuToggle = document.getElementById('menu-toggle');
+  const mobileMenu = document.getElementById('mobile-menu');
+  
+  menuToggle?.addEventListener('click', () => {
+    mobileMenu?.classList.toggle('hidden');
+    mobileMenu?.classList.toggle('flex');
+
+    const spans = menuToggle.querySelectorAll('span');
+    if (mobileMenu?.classList.contains('flex')) {
+      spans[0].style.transform = 'rotate(45deg) translateY(8px)';
+      spans[1].style.opacity = '0';
+      spans[2].style.transform = 'rotate(-45deg) translateY(-8px)';
+    } else {
+      spans[0].style.transform = 'none';
+      spans[1].style.opacity = '1';
+      spans[2].style.transform = 'none';
+    }
+  });
+
+  const mobileMenuLinks = document.querySelectorAll('#mobile-menu a');
+  mobileMenuLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      if (mobileMenu?.classList.contains('flex')) {
+        menuToggle?.click();
+      }
+    });
+  });
+
+  let lastScroll = 0;
+  const navbar = document.querySelector('nav');
+  
+  window.addEventListener('scroll', () => {
+    const currentScroll = window.pageYOffset;
+    
+    if (currentScroll > 50) {
+      navbar?.classList.add('shadow-xl');
+    } else {
+      navbar?.classList.remove('shadow-xl');
+    }
+    
+    lastScroll = currentScroll;
+  });
+</script>
+
+<style>
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .animate-fadeIn {
+    animation: fadeIn 0.3s ease-out;
+  }
+</style>

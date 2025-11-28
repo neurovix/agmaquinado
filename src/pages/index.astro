@@ -55,14 +55,14 @@ import TailorMade from "../assets/images/services/medida.png";
           metálicas de precisión a medida.
         </p>
 
-        <div class="mt-10 text-xl flex flex-col sm:flex-row gap-4">
+        <div class="mt-10 text-xl flex flex-col sm:flex-row gap-4 font-eras-demi">
           <a
-            href="#servicios"
+            href="/servicios"
             class="bg-[#1e3a8a] px-5 font-extrabold py-3 rounded-lg hover:bg-blue-900 text-center transition-all duration-300"
             >NUESTROS SERVICIOS</a
           >
           <a
-            href="#contacto"
+            href="/contacto"
             class="border-2 border-[#1e3a8a] px-5 py-2 rounded-lg font-extrabold hover:bg-[#1e3a8a] text-center transition-all duration-300"
             >CONTACTO</a
           >
@@ -757,3 +757,35 @@ import TailorMade from "../assets/images/services/medida.png";
 
   <Footer />
 </Layout>
+
+<style>
+  /* Base para animaciones de entrada sutiles */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* Aplica la animación a secciones y elementos clave */
+  .animate-fadeInUp {
+    opacity: 0;
+    animation: fadeInUp 0.7s ease-out forwards;
+  }
+
+  /* Retrasos para un efecto escalonado */
+  .delay-100 { animation-delay: 0.1s; }
+  .delay-200 { animation-delay: 0.2s; }
+  .delay-300 { animation-delay: 0.3s; }
+
+  /* Asegura que las secciones tengan la animación, pero solo si no tienen una más específica */
+  section {
+    opacity: 0;
+    animation: fadeInUp 0.8s ease-out forwards;
+    animation-delay: 0.1s;
+  }
+</style>

@@ -1,0 +1,246 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Navbar from "../components/Navbar.astro";
+import Footer from "../components/Footer.astro";
+import { Image } from "astro:assets";
+
+import Caterpillar from "../assets/images/clients/caterpillar.png";
+import Yanfeng from "../assets/images/clients/yanfeng.png";
+import Tetakawi from "../assets/images/clients/tetakawi.png";
+import Gaviones from "../assets/images/clients/gaviones.png";
+import IAM from "../assets/images/clients/iam.png";
+import Ingetek from "../assets/images/clients/ingetek.png";
+import LibertySteel from "../assets/images/clients/liberty_steel.png";
+import Manover from "../assets/images/clients/manover.png";
+import Mobility from "../assets/images/clients/mobility.png";
+import Woodbridge from "../assets/images/clients/woodbridge.png";
+
+import Presentacion from "/public/pdfs/ag_maquinado.pdf";
+import Presentation from "/public/pdfs/ag_machining.pdf";
+
+const clients = [
+  {
+    name: "Caterpillar",
+    src: Caterpillar,
+    project:
+      "Diseño y manufactura de utillajes y piezas de alto desgaste para líneas de producción de equipos de construcción.",
+  },
+  {
+    name: "Yanfeng",
+    src: Yanfeng,
+    project:
+      "Fabricación de moldes de inyección y componentes de ensamble automotriz con tolerancias micrométricas.",
+  },
+  {
+    name: "Tetakawi",
+    src: Tetakawi,
+    project:
+      "Mantenimiento y reparación de maquinaria industrial y componentes críticos de la infraestructura de manufactura.",
+  },
+  {
+    name: "Gaviones",
+    src: Gaviones,
+    project:
+      "Servicios de corte, soldadura TIG/MIG y ensambles estructurales de alta resistencia.",
+  },
+  {
+    name: "IAM",
+    src: IAM,
+    project:
+      "Integración de soluciones de ingeniería para optimización de procesos y automatización de líneas.",
+  },
+  {
+    name: "Ingetek",
+    src: Ingetek,
+    project:
+      "Maquinado CNC de precisión para prototipos y series cortas de componentes mecánicos especializados.",
+  },
+  {
+    name: "Liberty Steel",
+    src: LibertySteel,
+    project:
+      "Reparación y rectificado de piezas de gran formato y componentes de alto esfuerzo térmico.",
+  },
+  {
+    name: "Manover",
+    src: Manover,
+    project:
+      "Proyectos llave en mano de manufactura de herramientas y equipos industriales personalizados.",
+  },
+  {
+    name: "Mobility",
+    src: Mobility,
+    project:
+      "Fabricación de componentes de aleaciones especiales para la industria de movilidad eléctrica y sistemas de transporte.",
+  },
+  {
+    name: "Woodbridge",
+    src: Woodbridge,
+    project:
+      "Soporte en ingeniería y fabricación de piezas de repuesto críticas para minimizar tiempos de inactividad.",
+  },
+];
+---
+
+<Layout title="Nuestros Clientes - AG Maquinado CNC">
+  <main class="bg-gray-900 text-gray-100 font-sans">
+    <Navbar />
+
+    <section
+      class="relative bg-[url(/public/images/clients_hero.jpg)] bg-cover bg-center text-white px-4 overflow-hidden py-52 shadow-2xl"
+    >
+      <div class="relative max-w-7xl mx-auto text-center z-10">
+        <h1
+          class="text-6xl md:text-7xl animate-fadeInUp delay-100 font-extrabold mb-4 bg-clip-text text-white leading-tight drop-shadow-lg animate-fadeInUp"
+        >
+          Nuestros Socios Industriales
+        </h1>
+        <p
+          class="text-xl md:text-2xl animate-fadeInUp delay-100 text-white max-w- font-eras-demi mx-auto font-light"
+        >
+          La confianza de líderes en la industria automotriz, energética y de
+          construcción.
+        </p>
+      </div>
+    </section>
+
+    <section class="py-20 px-4 bg-gray-800 border-b border-gray-700">
+      <div class="max-w-6xl mx-auto text-center">
+        <h2 class="text-4xl font-bold mb-6 text-blue-400 font-eras-demi">
+          DESCARGA NUESTRA PRESENTACION CORPORATIVA
+        </h2>
+        <p class="text-xl text-gray-400 mb-10">
+          Conoce a detalle nuestras capacidades, equipos y casos de éxito.
+        </p>
+        <div class="flex flex-col md:flex-row justify-center gap-6">
+          <a
+            href={Presentacion}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="flex items-center justify-center bg-blue-600 text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-blue-700 transition-all duration-300 shadow-xl hover:shadow-blue-500/50 transform hover:scale-105"
+          >
+            <svg
+              class="w-6 h-6 mr-3"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              ><path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"
+              ></path></svg
+            >
+            Descargar Presentación (Español)
+          </a>
+          <a
+            href={Presentation}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="flex items-center justify-center bg-gray-700 text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-gray-600 transition-all duration-300 shadow-xl hover:shadow-gray-500/50 transform hover:scale-105"
+          >
+            <svg
+              class="w-6 h-6 mr-3"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              ><path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"
+              ></path></svg
+            >
+            Download Presentation (English)
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-32 px-4 bg-gray-900">
+      <div class="max-w-7xl mx-auto">
+        <div class="text-center mb-20">
+          <h2
+            class="text-5xl font-bold text-white mb-6 bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-300 font-eras-demi"
+          >
+            NUESTROS CLIENTES
+          </h2>
+          <p class="text-xl text-gray-400 max-w-2xl mx-auto">
+            La calidad de nuestro trabajo se mide por la satisfacción y lealtad
+            de nuestros socios.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+          {
+            clients.map((client) => (
+              <div class="group bg-gray-800 rounded-xl shadow-2xl overflow-hidden border border-gray-700 hover:border-blue-500 transition-all duration-500 transform hover:-translate-y-1">
+                <div class="p-6 h-40 flex items-center justify-center bg-white border-b border-gray-700">
+                  <Image
+                    src={client.src}
+                    alt={`Logo de ${client.name}`}
+                    class="max-h-28 w-auto object-contain transition-transform duration-500 group-hover:scale-105 grayscale group-hover:grayscale-0"
+                  />
+                </div>
+
+                <div class="p-6">
+                  <h3 class="text-2xl font-bold mb-3 text-blue-300 border-b border-gray-600 pb-2">
+                    {client.name}
+                  </h3>
+                  <p class="text-lg font-semibold text-gray-400 mb-4">
+                    Proyecto Clave:
+                  </p>
+
+                  <div class="bg-gray-700 p-4 rounded-lg border-l-4 border-cyan-400 h-28 flex items-center">
+                    <p class="text-gray-300 italic leading-relaxed text-sm">
+                      {client.project}
+                    </p>
+                  </div>
+                  <div class="mt-4 text-xs text-right text-gray-500">
+                    <span class="text-red-400">
+                      *Área marcada: Reemplazar aqui la informacion de cada proyecto.
+                    </span>
+                  </div>
+                </div>
+              </div>
+            ))
+          }
+        </div>
+      </div>
+    </section>
+
+    <Footer />
+  </main>
+</Layout>
+
+<style>
+  /* Base para animaciones de entrada sutiles */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* Aplica la animación a secciones y elementos clave */
+  .animate-fadeInUp {
+    opacity: 0;
+    animation: fadeInUp 0.7s ease-out forwards;
+  }
+
+  /* Retrasos para un efecto escalonado */
+  .delay-100 { animation-delay: 0.1s; }
+  .delay-200 { animation-delay: 0.2s; }
+  .delay-300 { animation-delay: 0.3s; }
+
+  /* Asegura que las secciones tengan la animación, pero solo si no tienen una más específica */
+  section {
+    opacity: 0;
+    animation: fadeInUp 0.8s ease-out forwards;
+    animation-delay: 0.1s;
+  }
+</style>

@@ -1,0 +1,479 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Navbar from "../components/Navbar.astro";
+import Footer from "../components/Footer.astro";
+
+// Foto de nuestro taller (Vista por fuera del taller)
+import Location from "../assets/images/location/location.png";
+
+// Nuestros clientes
+import Caterpillar from "../assets/images/clients/caterpillar.png";
+import Yanfeng from "../assets/images/clients/yanfeng.png";
+import Tetakawi from "../assets/images/clients/tetakawi.png";
+import Gaviones from "../assets/images/clients/gaviones.png";
+import IAM from "../assets/images/clients/iam.png";
+import Ingetek from "../assets/images/clients/ingetek.png";
+import LibertySteel from "../assets/images/clients/liberty_steel.png";
+import Manover from "../assets/images/clients/manover.png";
+import Mobility from "../assets/images/clients/mobility.png";
+import Woodbridge from "../assets/images/clients/woodbridge.png";
+---
+
+<Layout>
+  <main class="bg-gray-50">
+    <Navbar />
+
+    <!-- Hero Section -->
+    <section
+      class="bg-[url(/public/images/other_hero.jpg)] bg-cover bg-center py-48 text-white px-4"
+    >
+      <div class="max-w-7xl mx-auto text-center">
+        <h1 class="text-5xl md:text-7xl font-bold mb-6 font-eras-demi">Sobre Nosotros</h1>
+        <p class="text-xl md:text-2xl text-blue-100 font-bold">
+          Compromiso, experiencia y calidad en cada proyecto
+        </p>
+      </div>
+    </section>
+
+    <!-- Historia/Introducción -->
+    <section class="py-16 px-4">
+      <div class="max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div>
+            <h2 class="text-4xl font-bold text-blue-900 mb-6 font-eras-demi">
+              NUESTRA HISTORIA
+            </h2>
+            <p class="text-gray-700 text-lg mb-4 font-eras-demi">
+              Con años de experiencia en el sector metalúrgico, nuestro taller
+              se ha consolidado como un referente en soldadura, maquinado CNC y
+              fabricación de piezas de precisión en Saltillo, Coahuila.
+            </p>
+            <p class="text-gray-700 text-lg mb-4 font-eras-demi">
+              Nos especializamos en brindar soluciones integrales a la industria
+              automotriz, manufacturera y de construcción, combinando tecnología
+              de vanguardia con el conocimiento técnico de nuestro equipo.
+            </p>
+            <p class="text-gray-700 text-lg font-eras-demi">
+              Nuestro compromiso con la calidad y la satisfacción del cliente
+              nos ha permitido establecer relaciones de largo plazo con empresas
+              líderes en diversos sectores industriales.
+            </p>
+          </div>
+          <div class="rounded-lg overflow-hidden shadow-2xl">
+            <img
+              src={Location.src}
+              alt="Vista exterior del taller de soldadura y maquinado"
+              class="w-full h-auto object-cover"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Misión, Visión y Política de Calidad -->
+    <section class="py-16 px-4 bg-blue-50">
+      <div class="max-w-7xl mx-auto">
+        <h2 class="text-4xl font-bold text-center text-blue-900 mb-12 font-eras-demi">
+          NUESTROS VALORES
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Misión -->
+          <div
+            class="bg-white rounded-lg shadow-lg p-8 hover:shadow-xl transition-shadow"
+          >
+            <div
+              class="w-16 h-16 bg-blue-800 rounded-full flex items-center justify-center mb-6 mx-auto"
+            >
+              <svg
+                class="w-8 h-8 text-white"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+              </svg>
+            </div>
+            <h3 class="text-2xl font-bold text-blue-900 mb-4 text-center">
+              Misión
+            </h3>
+            <div class="bg-blue-50 rounded p-6 min-h-[200px] flex items-center">
+              <p class="text-gray-700 text-center italic">
+                Ser una empresa del ramo industrial con altos niveles de
+                calidad, servicio integral donde nuestro principal objetivo sera
+                siempre satisfacer las necesidades de nuestros clientes en
+                diferentes areas como lo son la fabriacion de piezas especiales,
+                reparacion, montajes industriales, proyectos de maquinados para
+                la industria en general. Apoyados en recursos tecnologicos de la
+                ultima generacion y servicios profesionales donde se mantiene un
+                respeto por la integridad humana.
+              </p>
+            </div>
+          </div>
+
+          <!-- Visión -->
+          <div
+            class="bg-white rounded-lg shadow-lg p-8 hover:shadow-xl transition-shadow"
+          >
+            <div
+              class="w-16 h-16 bg-blue-800 rounded-full flex items-center justify-center mb-6 mx-auto"
+            >
+              <svg
+                class="w-8 h-8 text-white"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"
+                ></path>
+              </svg>
+            </div>
+            <h3 class="text-2xl font-bold text-blue-900 mb-4 text-center">
+              Visión
+            </h3>
+            <div class="bg-blue-50 rounded p-6 min-h-[200px] flex items-center">
+              <p class="text-gray-700 text-center italic">
+                Nuestra vision es ser una empresa reconocida en el mercado
+                local, nacional e internacional con el fin de mejorar la
+                industria metal mecanica contribuyendo asi al desarrollo de
+                nuestra region atraves de una empresa competente, generando
+                fuentes de empleo teniendo en cuenta el factor humano como
+                principio de calidad para nuestros productos.
+              </p>
+            </div>
+          </div>
+
+          <!-- Política de Calidad -->
+          <div
+            class="bg-white rounded-lg shadow-lg p-8 hover:shadow-xl transition-shadow"
+          >
+            <div
+              class="w-16 h-16 bg-blue-800 rounded-full flex items-center justify-center mb-6 mx-auto"
+            >
+              <svg
+                class="w-8 h-8 text-white"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"
+                ></path>
+              </svg>
+            </div>
+            <h3 class="text-2xl font-bold text-blue-900 mb-4 text-center">
+              Política de Calidad
+            </h3>
+            <div class="bg-blue-50 rounded p-6 min-h-[200px] flex items-center">
+              <p class="text-gray-700 text-center italic">
+                Cumplir con la calidad y necesidad del cliente con productos y
+                servicios de alta calidad, asi como tambien mantener el
+                mejoramiento continuo de nuestra empresa, asi como tambien
+                mantener personal competente que permita suministrar a nuestros
+                clientes productos y servicios de alta calidad. Mediante quipos
+                e infraestructura en optimas condiciones para el buen desarrollo
+                de nuestra actividad comercial.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Nuestros Clientes -->
+    <section class="py-16 px-4">
+      <div class="max-w-7xl mx-auto">
+        <h2 class="text-4xl font-bold text-center text-blue-900 mb-4 font-eras-demi">
+          NUESTROS CLIENTES
+        </h2>
+        <p class="text-center text-gray-700 mb-12 text-lg max-w-3xl mx-auto">
+          Trabajamos con empresas líderes en diferentes sectores industriales,
+          brindando soluciones personalizadas que cumplen con los más altos
+          estándares de calidad
+        </p>
+
+        <div
+          class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 items-center"
+        >
+          <div
+            class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow flex items-center justify-center"
+          >
+            <img
+              src={Caterpillar.src}
+              alt="Cliente Caterpillar"
+              class="w-full h-20 object-contain grayscale hover:grayscale-0 transition-all"
+            />
+          </div>
+          <div
+            class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow flex items-center justify-center"
+          >
+            <img
+              src={Yanfeng.src}
+              alt="Cliente Yanfeng"
+              class="w-full h-20 object-contain grayscale hover:grayscale-0 transition-all"
+            />
+          </div>
+          <div
+            class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow flex items-center justify-center"
+          >
+            <img
+              src={Tetakawi.src}
+              alt="Cliente Tetakawi"
+              class="w-full h-20 object-contain grayscale hover:grayscale-0 transition-all"
+            />
+          </div>
+          <div
+            class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow flex items-center justify-center"
+          >
+            <img
+              src={Gaviones.src}
+              alt="Cliente Gaviones"
+              class="w-full h-20 object-contain grayscale hover:grayscale-0 transition-all"
+            />
+          </div>
+          <div
+            class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow flex items-center justify-center"
+          >
+            <img
+              src={IAM.src}
+              alt="Cliente IAM"
+              class="w-full h-20 object-contain grayscale hover:grayscale-0 transition-all"
+            />
+          </div>
+          <div
+            class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow flex items-center justify-center"
+          >
+            <img
+              src={Ingetek.src}
+              alt="Cliente Ingetek"
+              class="w-full h-20 object-contain grayscale hover:grayscale-0 transition-all"
+            />
+          </div>
+          <div
+            class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow flex items-center justify-center"
+          >
+            <img
+              src={LibertySteel.src}
+              alt="Cliente Liberty Steel"
+              class="w-full h-20 object-contain grayscale hover:grayscale-0 transition-all"
+            />
+          </div>
+          <div
+            class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow flex items-center justify-center"
+          >
+            <img
+              src={Manover.src}
+              alt="Cliente Manover"
+              class="w-full h-20 object-cover grayscale hover:grayscale-0 transition-all"
+            />
+          </div>
+          <div
+            class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow flex items-center justify-center"
+          >
+            <img
+              src={Mobility.src}
+              alt="Cliente Mobility"
+              class="w-full h-20 object-contain grayscale hover:grayscale-0 transition-all"
+            />
+          </div>
+          <div
+            class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow flex items-center justify-center"
+          >
+            <img
+              src={Woodbridge.src}
+              alt="Cliente Woodbridge"
+              class="w-full h-20 object-contain grayscale hover:grayscale-0 transition-all"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Ubicación -->
+    <section class="py-16 px-4 bg-blue-900 text-white">
+      <div class="max-w-7xl mx-auto">
+        <h2 class="text-4xl font-bold text-center mb-12 font-eras-demi">NUESTRA UBICACION</h2>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div>
+            <h3 class="text-2xl font-bold mb-6 text-blue-200">Visítanos</h3>
+            <div class="space-y-4">
+              <div class="flex items-start">
+                <svg
+                  class="w-6 h-6 text-blue-300 mt-1 mr-4 flex-shrink-0"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                  ></path>
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                </svg>
+                <div>
+                  <h4 class="font-semibold text-lg mb-1">Dirección</h4>
+                  <p class="text-blue-100">
+                    Lindero de los Palos Blancos, San Jose de los Cerritos 25294
+                  </p>
+                  <p class="text-blue-100">Saltillo, Coahuila, México</p>
+                </div>
+              </div>
+
+              <div class="flex items-start">
+                <svg
+                  class="w-6 h-6 text-blue-300 mt-1 mr-4 flex-shrink-0"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+                  ></path>
+                </svg>
+                <div>
+                  <h4 class="font-semibold text-lg mb-1">Teléfono</h4>
+                  <p class="text-blue-100">(844) 430 - 3784</p>
+                </div>
+              </div>
+
+              <div class="flex items-start">
+                <svg
+                  class="w-6 h-6 text-blue-300 mt-1 mr-4 flex-shrink-0"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                  ></path>
+                </svg>
+                <div>
+                  <h4 class="font-semibold text-lg mb-1">Email</h4>
+                  <p class="text-blue-100">alfonso.mirg@gmail.com</p>
+                </div>
+              </div>
+
+              <div class="flex items-start">
+                <svg
+                  class="w-6 h-6 text-blue-300 mt-1 mr-4 flex-shrink-0"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+                <div>
+                  <h4 class="font-semibold text-lg mb-1">Horario</h4>
+                  <p class="text-blue-100">
+                    Lunes a Viernes: 8:00 AM - 6:00 PM
+                  </p>
+                  <p class="text-blue-100">Sábado: 9:00 AM - 2:00 PM</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-white rounded-lg overflow-hidden shadow-2xl">
+            <div
+              class="aspect-video bg-gray-200 flex items-center justify-center"
+            >
+              <!-- Aquí puedes integrar Google Maps con un iframe -->
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4888.076010452527!2d-100.94830417918284!3d25.432584312159314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86880d2e55e45b6d%3A0x1e6d0b622f84fe8f!2sArquitectura%20%2B%20Ingenier%C3%ADa!5e0!3m2!1sen!2smx!4v1764307121409!5m2!1sen!2smx"
+                class="w-full h-72 md:h-[400px] object-cover"
+                style="border:0; filter: grayscale(0.3);"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section
+      class="py-16 px-4 bg-gradient-to-br from-blue-800 to-blue-900 text-white"
+    >
+      <div class="max-w-4xl mx-auto text-center">
+        <h2 class="text-3xl md:text-4xl font-bold mb-6 font-eras-demi">
+          ¿LISTO PARA TRABAJAR CON NOSOTROS?
+        </h2>
+        <p class="text-xl mb-8 text-blue-100">
+          Contáctanos hoy y descubre cómo podemos ayudarte con tu próximo
+          proyecto
+        </p>
+        <a
+          href="/contacto"
+          class="bg-white text-blue-900 px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 transition-colors inline-block text-lg"
+        >
+          Solicitar Cotización
+        </a>
+      </div>
+    </section>
+
+    <Footer />
+  </main>
+</Layout>
+
+<style>
+  /* Base para animaciones de entrada sutiles */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* Aplica la animación a secciones y elementos clave */
+  .animate-fadeInUp {
+    opacity: 0;
+    animation: fadeInUp 0.7s ease-out forwards;
+  }
+
+  /* Retrasos para un efecto escalonado */
+  .delay-100 { animation-delay: 0.1s; }
+  .delay-200 { animation-delay: 0.2s; }
+  .delay-300 { animation-delay: 0.3s; }
+
+  /* Asegura que las secciones tengan la animación, pero solo si no tienen una más específica */
+  section {
+    opacity: 0;
+    animation: fadeInUp 0.8s ease-out forwards;
+    animation-delay: 0.1s;
+  }
+</style>

@@ -1,0 +1,335 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Navbar from "../components/Navbar.astro";
+import Footer from "../components/Footer.astro";
+import { Image } from "astro:assets";
+
+// Ejemplos de tornos y maquinados cnc que hemos hecho
+import CNC1 from "../assets/images/cnc/cnc1.png";
+import CNC2 from "../assets/images/cnc/cnc2.png";
+import CNC3 from "../assets/images/cnc/cnc3.png";
+import CNC4 from "../assets/images/cnc/cnc4.png";
+import CNC5 from "../assets/images/cnc/cnc5.png";
+import CNC6 from "../assets/images/cnc/cnc6.png";
+
+// Ejemplos de engranes y coronas cnc que hemos hecho
+import Gear1 from "../assets/images/gears/gear1.png";
+import Gear2 from "../assets/images/gears/gear2.png";
+import Gear3 from "../assets/images/gears/gear3.png";
+import Gear4 from "../assets/images/gears/gear4.png";
+import Gear5 from "../assets/images/gears/gear5.png";
+import Gear6 from "../assets/images/gears/gear6.png";
+
+// Rectificado de piezas cnc
+import Rectified1 from "../assets/images/rectified/rectified1.png";
+import Rectified2 from "../assets/images/rectified/rectified2.png";
+import Rectified3 from "../assets/images/rectified/rectified3.png";
+import Rectified4 from "../assets/images/rectified/rectified4.png";
+import Rectified5 from "../assets/images/rectified/rectified5.png";
+
+// Software que usamos
+import AutoCad from "../assets/images/software/autocad.png";
+import MasterCamX from "../assets/images/software/mastercam.png";
+import SolidWorks from "../assets/images/software/solidoworks.png";
+
+// Servicios
+import Accesorios from "../assets/images/services/accesorios.png";
+import DepartamentoIngenieria from "../assets/images/services/departamento_ingenieria.png";
+import ManufacturadoPiezas from "../assets/images/services/manufacturado_piezas.png";
+import Manufacturado from "../assets/images/services/manufacturado.png";
+import Medida from "../assets/images/services/medida.png";
+
+// Equipo con el que contamos
+import CentroMaquinadoVertical from "../assets/images/equipment/centro_maquinado_vertical.png";
+import Electrodo from "../assets/images/equipment/electrodo.png";
+import FresadoraVertical from "../assets/images/equipment/fresadora_vertical.png";
+import MicroAlambre from "../assets/images/equipment/microalambre.png";
+import MIG from "../assets/images/equipment/mig.png";
+import MontacargasClark from "../assets/images/equipment/montacargas.png";
+import Oxicorte from "../assets/images/equipment/oxicorte.png";
+import Plasma from "../assets/images/equipment/plasma.png";
+import PrensaMecanica from "../assets/images/equipment/prensa_mecanica.png";
+import RectificadoraPlana from "../assets/images/equipment/rectificadora_plana.png";
+import SierraCinta from "../assets/images/equipment/sierra_cinta.png";
+import TIG from "../assets/images/equipment/tig.png";
+import TornoCNC from "../assets/images/equipment/torno_cnc.png";
+import TornoHorizontal from "../assets/images/equipment/torno_horizontal.png";
+---
+
+<Layout title="Maquinado CNC y Soldadura de Precisión">
+  <main class="bg-gray-900 text-gray-100 font-sans">
+    <Navbar />
+
+    <section class="relative bg-gray-900 text-white py-40 px-4 overflow-hidden border-b-4 border-blue-600 shadow-2xl">
+      <div class="absolute inset-0 opacity-10" style="background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNzgiIGhlaWdodD0iNzgiIHZpZXdCb3g9IjAgMCA3OCA3OCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiMwQjY1QzEiIGZpbGwtb3BhY2l0eT0iMC4xIj48cGF0aCBkPSJNNCAwSDJ2Mi4wNDJINGw0LTQuMDgySDJ2LTIuMDQySDZsNGwtNC00LjA4MnYyLjA0Mkg0eiIgLz48L2c+PC9nPjwvc3ZnPg==');"></div>
+
+      <div class="relative max-w-7xl mx-auto text-center z-10">
+        <p class="text-lg uppercase tracking-widest text-blue-400 mb-4 animate-fadeInUp">
+            Tecnología y Precisión Industrial
+        </p>
+        <h1 class="text-6xl md:text-8xl font-extrabold mb-8 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-cyan-200 leading-tight drop-shadow-lg animate-fadeInUp delay-100">
+          Maquinado CNC & Soldadura Experta
+        </h1>
+        <p class="text-2xl font-eras-demi md:text-3xl mb-12 text-gray-300 max-w-4xl mx-auto font-light animate-fadeInUp delay-200">
+          Piezas de alta <span class="text-blue-800">calidad</span> y <span class="text-blue-800">tolerancia</span> para los requerimientos más exigentes de la industria.
+        </p>
+        <a
+          href="/contacto"
+          class="inline-flex items-center bg-blue-600 text-white px-10 py-4 rounded-full font-bold text-xl uppercase tracking-wider shadow-2xl hover:bg-blue-700 transition-all duration-300 transform hover:scale-105 group border-2 border-blue-600 hover:border-blue-700 focus:outline-none focus:ring-4 focus:ring-blue-500/50 animate-fadeInUp delay-300"
+        >
+          Solicitar Cotización Rápida
+          <svg class="w-6 h-6 ml-3 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+          </svg>
+        </a>
+      </div>
+    </section>
+
+    <section class="py-32 px-4 bg-gray-800 border-b border-gray-700">
+      <div class="max-w-7xl mx-auto">
+        <div class="text-center mb-20">
+          <h2 class="text-5xl md:text-6xl font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-300">
+            🔧 Soluciones Industriales Clave
+          </h2>
+          <p class="text-xl text-gray-400 max-w-3xl mx-auto">
+            Nuestra especialización abarca desde la fabricación precisa hasta el control de calidad riguroso.
+          </p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+          <div class="group bg-gray-900 rounded-xl shadow-xl overflow-hidden hover:shadow-blue-500/30 transition-shadow duration-500 border border-gray-700 hover:border-blue-600 transform hover:-translate-y-2">
+            <div class="relative overflow-hidden">
+              <Image src={ManufacturadoPiezas} alt="Manufacturado de piezas de precisión" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500 opacity-80 group-hover:opacity-100" />
+              <div class="absolute inset-0 bg-blue-900/40 group-hover:bg-transparent transition-all duration-500"></div>
+            </div>
+            <div class="p-8">
+              <div class="text-blue-400 mb-3"><svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37a1.724 1.724 0 002.572-1.065z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path></svg></div>
+              <h3 class="text-2xl font-bold text-white mb-3 border-b border-blue-600 pb-2 inline-block">Manufacturado de Piezas</h3>
+              <p class="text-gray-400 leading-relaxed">Fabricación de piezas de alta **precisión** con maquinaria **CNC** y torno convencional, garantizando tolerancias mínimas.</p>
+            </div>
+          </div>
+
+          <div class="group bg-gray-900 rounded-xl shadow-xl overflow-hidden hover:shadow-blue-500/30 transition-shadow duration-500 border border-gray-700 hover:border-blue-600 transform hover:-translate-y-2">
+            <div class="relative overflow-hidden">
+              <Image src={DepartamentoIngenieria} alt="Departamento de ingeniería y diseño" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500 opacity-80 group-hover:opacity-100" />
+              <div class="absolute inset-0 bg-blue-900/40 group-hover:bg-transparent transition-all duration-500"></div>
+            </div>
+            <div class="p-8">
+              <div class="text-blue-400 mb-3"><svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19V6a2 2 0 00-2-2H5a2 2 0 00-2 2v13M14 19V6a2 2 0 012-2h2a2 2 0 012 2v13M10 19H4.6a.6.6 0 01-.6-.6V16a.6.6 0 01.6-.6H10a.6.6 0 01.6.6v2.4a.6.6 0 01-.6.6zM15 19H9.6a.6.6 0 01-.6-.6V16a.6.6 0 01.6-.6H15a.6.6 0 01.6.6v2.4a.6.6 0 01-.6.6zM20 19h-5.4a.6.6 0 01-.6-.6V16a.6.6 0 01.6-.6H20a.6.6 0 01.6.6v2.4a.6.6 0 01-.6.6z"></path></svg></div>
+              <h3 class="text-2xl font-bold text-white mb-3 border-b border-blue-600 pb-2 inline-block">Departamento de Ingeniería</h3>
+              <p class="text-gray-400 leading-relaxed">Diseño, **rediseño** y desarrollo de proyectos personalizados. Transformamos ideas en modelos listos para producción.</p>
+            </div>
+          </div>
+
+          <div class="group bg-gray-900 rounded-xl shadow-xl overflow-hidden hover:shadow-blue-500/30 transition-shadow duration-500 border border-gray-700 hover:border-blue-600 transform hover:-translate-y-2">
+            <div class="relative overflow-hidden">
+              <Image src={Accesorios} alt="Accesorios y componentes industriales" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500 opacity-80 group-hover:opacity-100" />
+              <div class="absolute inset-0 bg-blue-900/40 group-hover:bg-transparent transition-all duration-500"></div>
+            </div>
+            <div class="p-8">
+              <div class="text-blue-400 mb-3"><svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37a1.724 1.724 0 002.572-1.065z"></path></svg></div>
+              <h3 class="text-2xl font-bold text-white mb-3 border-b border-blue-600 pb-2 inline-block">Procesos de Soldadura</h3>
+              <p class="text-gray-400 leading-relaxed">Soldadura de alta integridad **MIG, TIG, Micro Alambre** y **Electrodo** para ensambles y reparaciones críticas.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section class="py-32 px-4 bg-gray-950">
+      <div class="max-w-7xl mx-auto">
+        <div class="text-center mb-20">
+          <h2 class="text-5xl md:text-6xl font-bold text-white mb-6 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-300">
+            ⚙️ Galería de Maquinado CNC
+          </h2>
+          <p class="text-xl text-gray-400 max-w-2xl mx-auto font-eras-demi">Precisión en cada corte. Ejemplos de piezas mecanizadas.</p>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          {[CNC1, CNC2, CNC3, CNC4, CNC5, CNC6].map((src, index) => (
+            <div class="group relative rounded-xl overflow-hidden shadow-2xl hover:shadow-blue-500/50 transition-all duration-500 transform hover:scale-[1.02]">
+              <Image src={src} alt={`Pieza de maquinado CNC ${index + 1}`} class="w-full h-80 object-contain opacity-80 group-hover:opacity-100 transition-opacity duration-500" />
+              <div class="absolute inset-0 bg-black/40 group-hover:bg-black/10 transition-colors duration-500"></div>
+              <div class="absolute bottom-0 left-0 p-4 text-white text-lg font-semibold bg-black/30 w-full backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                Pieza de Alta Precisión {index + 1}
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <section class="py-32 px-4 bg-gray-800 border-t border-gray-700">
+      <div class="max-w-7xl mx-auto">
+        <div class="text-center mb-20">
+          <h2 class="text-5xl md:text-6xl font-bold text-white mb-6 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-300">
+            🔩 Engranes y Coronas
+          </h2>
+          <p class="text-xl text-gray-400 max-w-2xl mx-auto font-eras-demi">Fabricación especializada de componentes para sistemas de transmisión.</p>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          {[Gear1, Gear2, Gear3, Gear4, Gear5, Gear6].map((src, index) => (
+            <div class="group relative rounded-xl overflow-hidden shadow-2xl bg-white hover:shadow-blue-500/50 transition-all duration-500 transform hover:scale-[1.02]">
+              <Image src={src} alt={`Engrane/Corona CNC ${index + 1}`} class="w-full h-80 object-contain opacity-80 group-hover:opacity-100 transition-opacity duration-500" />
+              <div class="absolute inset-0 bg-black/40 group-hover:bg-black/10 transition-colors duration-500"></div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <section class="py-32 px-4 bg-gray-950 border-t border-gray-700">
+      <div class="max-w-7xl mx-auto">
+        <div class="text-center mb-20">
+          <h2 class="text-5xl md:text-6xl font-bold text-white mb-6 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-300">
+            Rectificado de Superficies
+          </h2>
+          <p class="text-xl text-gray-400 max-w-2xl mx-auto font-eras-demi">Acabados de espejo y planitud extrema para piezas críticas.</p>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          {[Rectified1, Rectified2, Rectified3, Rectified4, Rectified5].map((src, index) => (
+            <div class="group relative rounded-xl overflow-hidden shadow-2xl hover:shadow-blue-500/50 transition-all duration-500 transform hover:scale-[1.02]">
+              <Image src={src} alt={`Pieza rectificada ${index + 1}`} class="w-full h-80 object-contain opacity-80 group-hover:opacity-100 transition-opacity duration-500" />
+              <div class="absolute inset-0 bg-black/40 group-hover:bg-black/10 transition-colors duration-500"></div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <section class="py-32 px-4 bg-gray-800 border-t border-gray-700">
+      <div class="max-w-7xl mx-auto">
+        <div class="text-center mb-20">
+          <h2 class="text-5xl md:text-6xl font-bold text-white mb-6 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-300">
+            💻 Software de Vanguardia
+          </h2>
+          <p class="text-xl text-gray-400 max-w-3xl mx-auto font-eras-demi">Modelado 3D, Diseño Asistido y Programación CNC de última generación.</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+          <div class="group bg-gray-900 rounded-xl shadow-xl p-8 text-center hover:shadow-blue-500/50 transition-all duration-500 transform hover:-translate-y-2 border border-gray-700 hover:border-blue-600">
+            <div class="w-32 h-32 bg-gray-700 rounded-full flex items-center justify-center mx-auto mb-6 shadow-inner border-4 border-blue-500/50 group-hover:border-blue-400 transition-all duration-500">
+              <Image src={AutoCad} alt="Software AutoCAD" class="w-20 h-20 object-contain p-1 rounded bg-white" />
+            </div>
+            <h3 class="text-3xl font-bold text-white mb-2">AutoCAD</h3>
+            <p class="text-blue-400 font-semibold mb-4">Diseño 2D/3D</p>
+            <p class="text-gray-400 leading-relaxed">Creación y revisión de planos técnicos con la mayor precisión.</p>
+          </div>
+          <div class="group bg-gray-900 rounded-xl shadow-xl p-8 text-center hover:shadow-blue-500/50 transition-all duration-500 transform hover:-translate-y-2 border border-gray-700 hover:border-blue-600">
+            <div class="w-32 h-32 bg-gray-700 rounded-full flex items-center justify-center mx-auto mb-6 shadow-inner border-4 border-blue-500/50 group-hover:border-blue-400 transition-all duration-500">
+              <Image src={MasterCamX} alt="Software Mastercam X" class="w-20 h-20 object-contain p-1 rounded" />
+            </div>
+            <h3 class="text-3xl font-bold text-white mb-2">Mastercam X</h3>
+            <p class="text-blue-400 font-semibold mb-4">Programación CAM</p>
+            <p class="text-gray-400 leading-relaxed">Generación de trayectorias de herramienta óptimas para CNC.</p>
+          </div>
+          <div class="group bg-gray-900 rounded-xl shadow-xl p-8 text-center hover:shadow-blue-500/50 transition-all duration-500 transform hover:-translate-y-2 border border-gray-700 hover:border-blue-600">
+            <div class="w-32 h-32 bg-gray-700 rounded-full flex items-center justify-center mx-auto mb-6 shadow-inner border-4 border-blue-500/50 group-hover:border-blue-400 transition-all duration-500">
+              <Image src={SolidWorks} alt="Software SolidWorks" class="w-20 h-20 object-contain p-1 rounded bg-white" />
+            </div>
+            <h3 class="text-3xl font-bold text-white mb-2">SolidWorks</h3>
+            <p class="text-blue-400 font-semibold mb-4">Modelado y Simulación</p>
+            <p class="text-gray-400 leading-relaxed">Diseño paramétrico 3D y análisis de ensambles complejos.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-32 px-4 relative bg-gray-950 text-white overflow-hidden">
+      <div class="relative max-w-7xl mx-auto">
+        <div class="text-center mb-20">
+          <h2 class="text-5xl md:text-6xl font-bold text-white mb-6 bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-300">
+            🏭 Nuestra Maquinaria
+          </h2>
+          <p class="text-xl text-gray-400 max-w-3xl mx-auto font-eras-demi">Inversión continua en equipo de última generación para garantizar la calidad.</p>
+        </div>
+
+        <div class="space-y-16">
+            <div class="border-b border-blue-600 pb-8">
+                <h3 class="text-4xl font-extrabold mb-10 text-center text-blue-400 uppercase tracking-wider font-eras-demi">Maquinado y Torneado</h3>
+                <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6">
+                    {[
+                        { src: TornoCNC, alt: "Torno CNC", name: "Torno CNC" },
+                        { src: FresadoraVertical, alt: "Fresadora Vertical", name: "Fresadora Vertical" },
+                        { src: CentroMaquinadoVertical, alt: "Centro de Maquinado Vertical", name: "C. Maquinado Vertical" },
+                        { src: TornoHorizontal, alt: "Torno Horizontal", name: "Torno Convencional" },
+                        { src: RectificadoraPlana, alt: "Rectificadora Plana", name: "Rectificadora Plana" }
+                    ].map((item) => (
+                        <div class="group bg-gray-900 rounded-lg p-3 hover:bg-gray-800 transition-all duration-300 hover:shadow-blue-500/30 shadow-xl border border-gray-700 hover:border-blue-500">
+                            <Image src={item.src} alt={item.alt} class="w-full h-32 bg-white rounded object-contain rounded-md mb-3 group-hover:scale-105 transition-transform duration-500" />
+                            <h4 class="font-semibold text-center text-gray-200 text-sm">{item.name}</h4>
+                        </div>
+                    ))}
+                </div>
+            </div>
+
+            <div class="border-b border-blue-600 pb-8">
+                <h3 class="text-4xl font-extrabold mb-10 text-center text-blue-400 uppercase tracking-wider font-eras-demi">Soldadura y Corte</h3>
+                <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6">
+                    {[
+                        { src: MIG, alt: "Soldadura MIG", name: "Soldadura MIG" },
+                        { src: TIG, alt: "Soldadura TIG", name: "Soldadura TIG" },
+                        { src: MicroAlambre, alt: "Soldadura Micro Alambre", name: "Micro Alambre" },
+                        { src: Electrodo, alt: "Soldadura Electrodo", name: "Soldadura Electrodo" },
+                        { src: Plasma, alt: "Corte Plasma", name: "Corte Plasma" },
+                        { src: Oxicorte, alt: "Oxicorte", name: "Oxicorte" },
+                        { src: SierraCinta, alt: "Sierra de Cinta", name: "Sierra de Cinta" },
+                    ].map((item) => (
+                        <div class="group bg-gray-900 rounded-lg p-3 hover:bg-gray-800 transition-all duration-300 hover:shadow-blue-500/30 shadow-xl border border-gray-700 hover:border-blue-500">
+                            <Image src={item.src} alt={item.alt} class="w-full h-32 bg-white rounded object-contain mb-3 group-hover:scale-105 transition-transform duration-500" />
+                            <h4 class="font-semibold text-center text-gray-200 font-eras-demi text-sm">{item.name}</h4>
+                        </div>
+                    ))}
+                </div>
+            </div>
+
+            <div>
+                <h3 class="text-4xl font-extrabold mb-10 text-center text-blue-400 uppercase tracking-wider font-eras-demi">Manejo y Prensado</h3>
+                <div class="grid grid-cols-2 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+                    {[
+                        { src: PrensaMecanica, alt: "Prensa Mecánica", name: "Prensa Mecánica" },
+                        { src: MontacargasClark, alt: "Montacargas Clark", name: "Montacargas Industrial" }
+                    ].map((item) => (
+                        <div class="group bg-gray-900 rounded-lg p-3 hover:bg-gray-800 transition-all duration-300 hover:shadow-blue-500/30 shadow-xl border border-gray-700 hover:border-blue-500">
+                            <Image src={item.src} alt={item.alt} class="w-full h-32 object-contain bg-white rounded mb-3 group-hover:scale-105 transition-transform duration-500" />
+                            <h4 class="font-semibold text-center text-gray-200 text-sm">{item.name}</h4>
+                        </div>
+                    ))}
+                </div>
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <Footer />
+  </main>
+</Layout>
+
+<style>
+  /* Base para animaciones de entrada sutiles */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* Aplica la animación a secciones y elementos clave */
+  .animate-fadeInUp {
+    opacity: 0;
+    animation: fadeInUp 0.7s ease-out forwards;
+  }
+
+  /* Retrasos para un efecto escalonado */
+  .delay-100 { animation-delay: 0.1s; }
+  .delay-200 { animation-delay: 0.2s; }
+  .delay-300 { animation-delay: 0.3s; }
+
+  /* Asegura que las secciones tengan la animación, pero solo si no tienen una más específica */
+  section {
+    opacity: 0;
+    animation: fadeInUp 0.8s ease-out forwards;
+    animation-delay: 0.1s;
+  }
+</style>
